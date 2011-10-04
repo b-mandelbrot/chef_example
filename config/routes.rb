@@ -1,6 +1,9 @@
 ChefExample::Application.routes.draw do
+  resources :chefs
+
   get "home/index"
-  root :to => "home#index"
+
+  root :to => "chefs#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
